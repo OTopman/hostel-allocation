@@ -44,7 +44,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="icon" href="<?= image_url('logo.png') ?>">
 </head>
-<body class="hold-transition skin-blue sidebar-mini" >
+<body class="hold-transition skin-red sidebar-mini" >
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
@@ -96,36 +96,29 @@
                 <li class="header">MAIN NAVIGATION</li>
                 <li >
                     <a href="<?= base_url('dashboard.php') ?>">
-                        <i class="fa fa-home text-primary "></i>
+                        <i class="fa fa-home text-warning"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('staff.php') ?>">
-                        <i class="fa fa-users text-primary "></i>
+                        <i class="fa fa-users text-warning"></i>
                         <span>All Staffs</span>
                     </a>
                 </li>
 
                 <li >
-                    <a href="<?= base_url('guidance.php') ?>">
-                        <i class="fa fa-book text-primary "></i>
-                        <span>Career Guidance</span>
+                    <a href="<?= base_url('student.php') ?>">
+                        <i class="fa fa-users text-warning"></i>
+                        <span>All Student's</span>
                     </a>
                 </li>
 
                 <li >
-                    <a href="<?= base_url('requirement.php') ?>">
-                        <i class="fa fa-book text-primary "></i>
-                        <span>Department Requirements</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="<?= base_url('department.php') ?>">
-                        <i class="fa fa-book text-primary "></i>
-                        <span>All Schools &amp; Departments</span>
+                    <a href="<?= base_url('staff.php') ?>">
+                        <i class="fa fa-home text-warning"></i>
+                        <span>Hall Of Residence</span>
                     </a>
                 </li>
 
@@ -154,4 +147,7 @@
                 <li class="active"><?= $page_title ?></li>
             </ol>
         </section>
+
+        <section class="content">
+            <div class="row">
 

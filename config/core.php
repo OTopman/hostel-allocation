@@ -10,7 +10,7 @@
     require_once 'func.php';
     define('Env', 'onlin');
 
-    define("DB_PREFIX", "cg_");
+    define("DB_PREFIX", "ht_");
 
     define("LIB_DIR","http://projects.io/app/creche/");
     define("HOME_DIR","http://projects.io/app/hostel-allocation/");
