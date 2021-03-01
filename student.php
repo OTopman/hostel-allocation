@@ -31,7 +31,6 @@ require_once 'libs/head.php';
                     <thead>
                         <tr>
                             <th>SN</th>
-                            <th>Passport</th>
                             <th>Matric Number</th>
                             <th>Full Name</th>
                             <th>Email Address</th>
@@ -42,6 +41,43 @@ require_once 'libs/head.php';
                             <th>Actions</th>
                         </tr>
                     </thead>
+                    <tfoot>
+                    <tr>
+                        <th>SN</th>
+                        <th>Matric Number</th>
+                        <th>Full Name</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                        <th>Department</th>
+                        <th>Level</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <?php
+                        $sql = $db->query("SELECT s.*, d.name as dept FROM ".DB_PREFIX."students s 
+                            LEFT JOIN ".DB_PREFIX."departments d
+                                ON s.dept = d.id
+                            ORDER BY s.id DESC
+                        ");
+                        while ($rs = $sql->fetch(PDO::FETCH_ASSOC)){
+                            ?>
+                            <tr>
+                                <td><?= $sn++ ?></td>
+                                <td><?= $rs['matric'] ?></td>
+                                <td><?= ucwords($rs['fname']) ?></td>
+                                <td><?= $rs['email'] ?></td>
+                                <td><?= $rs['phone'] ?></td>
+                                <td><?= $rs['dept'] ?></td>
+                                <td><?= ucwords($rs['level']) ?></td>
+                                <td><?= $rs['created_at'] ?></td>
+                                <td><a href="" class="btn btn-primary">View</a></td>
+                            </tr>
+                             <?php
+                        }
+                    ?>
+                    </tbody>
                 </table>
             </div>
 

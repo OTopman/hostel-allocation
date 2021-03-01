@@ -15,6 +15,7 @@
     define("LIB_DIR","http://projects.io/app/creche/");
     define("HOME_DIR","http://projects.io/app/hostel-allocation/");
     define("HTML_TEMPLATE",LIB_DIR.'templates/');
+
     define("USER_SESSION_HOLDER", "admin");
     define("WEB_TITLE","Hostel Allocation");
     define("WEB_SUB_TITLE","HA");

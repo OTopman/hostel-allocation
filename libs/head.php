@@ -116,9 +116,30 @@
                 </li>
 
                 <li >
+                    <a href="<?= base_url('add-student.php') ?>">
+                        <i class="fa fa-users text-warning"></i>
+                        <span>Add New Student</span>
+                    </a>
+                </li>
+
+                <li >
                     <a href="<?= base_url('staff.php') ?>">
                         <i class="fa fa-home text-warning"></i>
                         <span>Hall Of Residence</span>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="<?= base_url('staff.php') ?>">
+                        <i class="fa fa-home text-warning"></i>
+                        <span>Hostel Allocation</span>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="<?= base_url('staff.php') ?>">
+                        <i class="fab fa-cc-mastercard text-warning"></i>
+                        <span>Payment History</span>
                     </a>
                 </li>
 
