@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4d61f0f-12b7-4cf3-879b-641424636f28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/add-student.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-hall.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hall.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/core.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-student.php" beforeDir="false" afterPath="$PROJECT_DIR$/add-student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/head.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/student.php" afterDir="false" />
     </list>
@@ -31,26 +33,26 @@
         <counts>
           <entry key="css" value="3" />
           <entry key="js" value="1" />
-          <entry key="php" value="19" />
+          <entry key="php" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="19" />
+          <entry key="PHP" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="24" />
-          <entry key="php" value="3103" />
+          <entry key="php" value="3916" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="24" />
-          <entry key="PHP" value="3103" />
+          <entry key="PHP" value="3916" />
         </counts>
       </usages-collector>
     </session>
@@ -60,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="334">
+              <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -69,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="135" column="24" lean-forward="true" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -78,8 +80,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+            <state relative-caret-position="524">
+              <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add-hall.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add-student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -95,12 +115,14 @@
         <option value="$PROJECT_DIR$/config/func.php" />
         <option value="$PROJECT_DIR$/templates/css/login5-style.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/staff.php" />
         <option value="$PROJECT_DIR$/libs/foot.php" />
-        <option value="$PROJECT_DIR$/add-student.php" />
-        <option value="$PROJECT_DIR$/libs/head.php" />
         <option value="$PROJECT_DIR$/config/core.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/hall.php" />
+        <option value="$PROJECT_DIR$/libs/head.php" />
+        <option value="$PROJECT_DIR$/add-hall.php" />
+        <option value="$PROJECT_DIR$/add-student.php" />
         <option value="$PROJECT_DIR$/student.php" />
       </list>
     </option>
@@ -195,12 +217,12 @@
       <workItem from="1613487438076" duration="18000" />
       <workItem from="1614344595387" duration="3226000" />
       <workItem from="1614492426284" duration="182000" />
-      <workItem from="1614583678252" duration="4194000" />
+      <workItem from="1614583678252" duration="5175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10883000" />
+    <option name="totallyTimeSpent" value="11864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -290,31 +312,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/func.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add-student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1645">
-          <caret line="132" column="94" selection-start-line="132" selection-start-column="94" selection-end-line="132" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="135" column="24" lean-forward="true" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -325,10 +326,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="38" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-hall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        <state relative-caret-position="524">
+          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
         </state>
       </provider>
     </entry>

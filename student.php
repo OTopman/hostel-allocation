@@ -37,6 +37,7 @@ require_once 'libs/head.php';
                             <th>Phone Number</th>
                             <th>Department</th>
                             <th>Level</th>
+                            <th>Gender</th>
                             <th>Created At</th>
                             <th>Actions</th>
                         </tr>
@@ -50,6 +51,7 @@ require_once 'libs/head.php';
                         <th>Phone Number</th>
                         <th>Department</th>
                         <th>Level</th>
+                        <th>Gender</th>
                         <th>Created At</th>
                         <th>Actions</th>
                     </tr>
@@ -71,8 +73,9 @@ require_once 'libs/head.php';
                                 <td><?= $rs['phone'] ?></td>
                                 <td><?= $rs['dept'] ?></td>
                                 <td><?= ucwords($rs['level']) ?></td>
+                                <td><?= ucwords($rs['gender']) ?></td>
                                 <td><?= $rs['created_at'] ?></td>
-                                <td><a href="" class="btn btn-primary">View</a></td>
+                                <td><a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-primary">View</a></td>
                             </tr>
                              <?php
                         }

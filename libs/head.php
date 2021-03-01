@@ -123,9 +123,16 @@
                 </li>
 
                 <li >
-                    <a href="<?= base_url('staff.php') ?>">
+                    <a href="<?= base_url('hall.php') ?>">
                         <i class="fa fa-home text-warning"></i>
-                        <span>Hall Of Residence</span>
+                        <span> Hall Of Residence</span>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="<?= base_url('add-hall.php') ?>">
+                        <i class="fa fa-home text-warning"></i>
+                        <span>Add Hall Of Residence</span>
                     </a>
                 </li>
 

@@ -16,6 +16,7 @@ if (isset($_POST['add'])){
     $email = $_POST['email'];
     $dept = $_POST['dept'];
     $level = $_POST['level'];
+    $gender = $_POST['gender'];
 
     $sql = $db->query("SELECT * FROM ".DB_PREFIX."students WHERE matric='$matric'");
     if ($sql->rowCount() >= 1){
@@ -38,8 +39,8 @@ if (isset($_POST['add'])){
 
     if ($error_count == 0 ){
 
-        $db->query("INSERT INTO ".DB_PREFIX."students (matric,password,fname,phone,email,dept,level)
-        VALUES('$matric','$password','$fname','$phone','$email','$dept','$level')");
+        $db->query("INSERT INTO ".DB_PREFIX."students (matric,password,fname,phone,email,dept,level,gender)
+        VALUES('$matric','$password','$fname','$phone','$email','$dept','$level','$gender')");
 
         set_flash("Student has been added successfully","info");
 
@@ -131,6 +132,17 @@ require_once 'libs/head.php';
                         <div class="form-group">
                             <label for="">Email Address</label>
                             <input type="email" class="form-control" value="<?= @$_POST['email']; ?>" required placeholder="Email Address" name="email" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="">Gender</label>
+                            <select name="gender" class="form-control" required id="">
+                                <option value="" selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
                         </div>
                     </div>
                 </div>
