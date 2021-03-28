@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4d61f0f-12b7-4cf3-879b-641424636f28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-hall.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-student.php" beforeDir="false" afterPath="$PROJECT_DIR$/add-student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/func.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hall.php" beforeDir="false" afterPath="$PROJECT_DIR$/hall.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type.php" beforeDir="false" afterPath="$PROJECT_DIR$/type.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/type.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="47" selection-start-line="47" selection-end-line="79" selection-end-column="20" />
+            <state relative-caret-position="84">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="33" />
               <folding>
                 <element signature="e#202#1112#0#HTML" />
                 <element signature="e#510#517#1#HTML" expanded="true" />
@@ -44,12 +40,20 @@
         <entry file="file://$PROJECT_DIR$/hall.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+              <caret line="22" column="124" selection-start-line="22" selection-start-column="124" selection-end-line="22" selection-end-column="124" />
               <folding>
                 <element signature="e#504#511#1#HTML" expanded="true" />
-                <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="101" column="61" selection-start-line="101" selection-start-column="61" selection-end-line="101" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -70,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/func.php" />
         <option value="$PROJECT_DIR$/templates/css/login5-style.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/staff.php" />
@@ -84,6 +87,7 @@
         <option value="$PROJECT_DIR$/type.php" />
         <option value="$PROJECT_DIR$/add-hall.php" />
         <option value="$PROJECT_DIR$/libs/head.php" />
+        <option value="$PROJECT_DIR$/config/func.php" />
         <option value="$PROJECT_DIR$/hall.php" />
       </list>
     </option>
@@ -107,6 +111,11 @@
             <path>
               <item name="hostel-allocation" type="b2602c69:ProjectViewProjectNode" />
               <item name="hostel-allocation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hostel-allocation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hostel-allocation" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -163,12 +172,12 @@
       <workItem from="1615455337271" duration="1682000" />
       <workItem from="1615523654452" duration="224000" />
       <workItem from="1616068490210" duration="601000" />
-      <workItem from="1616915908319" duration="1805000" />
+      <workItem from="1616915908319" duration="2670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19718000" />
+    <option name="totallyTimeSpent" value="20583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -255,13 +264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/core.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -327,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/type.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="47" selection-start-line="47" selection-end-line="79" selection-end-column="20" />
+        <state relative-caret-position="84">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="33" />
           <folding>
             <element signature="e#202#1112#0#HTML" />
             <element signature="e#510#517#1#HTML" expanded="true" />
@@ -337,14 +339,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="101" column="61" selection-start-line="101" selection-start-column="61" selection-end-line="101" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hall.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <caret line="22" column="124" selection-start-line="22" selection-start-column="124" selection-end-line="22" selection-end-column="124" />
           <folding>
             <element signature="e#504#511#1#HTML" expanded="true" />
-            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

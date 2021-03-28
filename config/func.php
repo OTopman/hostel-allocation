@@ -96,3 +96,10 @@ function amount_format($amount){
 function checkemail($str) {
     return (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $str)) ? FALSE : TRUE;
 }
+
+function hostel_type($id,$value){
+    global $db;
+    $sql = $db->query("SELECT * FROM ".DB_PREFIX."hostel_type WHERE id='$id'");
+    $rs = $sql->fetch(PDO::FETCH_ASSOC);
+    return $rs[$value];
+}
