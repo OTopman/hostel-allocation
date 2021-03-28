@@ -67,7 +67,7 @@ require_once 'libs/head.php';
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-warning" name="add" value="Submit" id="">
+                            <input type="submit" class="btn btn-danger" name="add" value="Submit" id="">
                         </div>
                     </form>
 
@@ -96,7 +96,7 @@ require_once 'libs/head.php';
 
             <?php flash(); ?>
 
-            <a href="#"  data-toggle="modal" class="btn btn-warning" data-target="#modal-default" style="margin-bottom: 20px">Add New Hostel Type</a>
+            <a href="#"  data-toggle="modal" class="btn btn-danger" data-target="#modal-default" style="margin-bottom: 20px">Add New Hostel Type</a>
 
             <div class="table-responsive">
                 <table class="table table-bordered table-hover" id="example1">

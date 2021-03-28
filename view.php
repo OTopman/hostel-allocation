@@ -36,7 +36,7 @@ require_once 'libs/head.php';
 
     <div class="box box-widget widget-user">
         <!-- Add the bg color to the header using any of the bg-* classes -->
-        <div class="widget-user-header bg-yellow-gradient">
+        <div class="widget-user-header bg-red-gradient">
             <h3 class="widget-user-username"><?= ucwords($data['fname']) ?></h3>
             <h5 class="widget-user-desc">Level : <?= ucwords($data['level']) ?></h5>
         </div>
@@ -126,11 +126,7 @@ require_once 'libs/head.php';
                             <th>SN</th>
                             <th>Amount Paid</th>
                             <th>Reference</th>
-                            <th>Term</th>
-                            <th>Class</th>
                             <th>Payment Status</th>
-                            <th>Payment Type</th>
-                            <th>Academic Session</th>
                             <th>Created At</th>
                             <th>Paid At</th>
                         </tr>
@@ -140,11 +136,7 @@ require_once 'libs/head.php';
                             <th>SN</th>
                             <th>Amount Paid</th>
                             <th>Reference</th>
-                            <th>Term</th>
-                            <th>Class</th>
                             <th>Payment Status</th>
-                            <th>Payment Type</th>
-                            <th>Academic Session</th>
                             <th>Created At</th>
                             <th>Paid At</th>
                         </tr>

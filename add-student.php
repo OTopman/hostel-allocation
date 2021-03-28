@@ -148,7 +148,7 @@ require_once 'libs/head.php';
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" class="btn btn-warning" value="Submit" name="add" id="">
+                    <input type="submit" class="btn btn-danger" value="Submit" name="add" id="">
                 </div>
             </form>
 

@@ -44,7 +44,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="icon" href="<?= image_url('logo.png') ?>">
 </head>
-<body class="hold-transition skin-yellow sidebar-mini" >
+<body class="hold-transition skin-red sidebar-mini" >
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
@@ -96,42 +96,42 @@
                 <li class="header">MAIN NAVIGATION</li>
                 <li >
                     <a href="<?= base_url('dashboard.php') ?>">
-                        <i class="fa fa-home text-yellow"></i>
+                        <i class="fa fa-home text-red"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('staff.php') ?>">
-                        <i class="fa fa-users text-yellow"></i>
+                        <i class="fa fa-users text-red"></i>
                         <span>All Staffs</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('student.php') ?>">
-                        <i class="fa fa-users text-yellow"></i>
+                        <i class="fa fa-users text-red"></i>
                         <span>All Student's</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('hall.php') ?>">
-                        <i class="fa fa-home text-yellow"></i>
+                        <i class="fa fa-home text-red"></i>
                         <span> Hall Of Residence</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('add-student.php') ?>">
-                        <i class="fa fa-users text-yellow"></i>
+                        <i class="fa fa-users text-red"></i>
                         <span>Add New Student</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('allocation.php') ?>">
-                        <i class="fa fa-home text-yellow"></i>
+                        <i class="fa fa-home text-red"></i>
                         <span>Hostel Allocation</span>
                     </a>
                 </li>
@@ -139,14 +139,14 @@
 
                 <li >
                     <a href="<?= base_url('type.php') ?>">
-                        <i class="fa fa-home text-yellow"></i>
+                        <i class="fa fa-home text-red"></i>
                         <span> Hall Of Residence Type</span>
                     </a>
                 </li>
 
                 <li >
                     <a href="<?= base_url('payment.php') ?>">
-                        <i class="fab fa-cc-mastercard text-yellow"></i>
+                        <i class="fab fa-cc-mastercard text-red"></i>
                         <span>Hostel Payment History</span>
                     </a>
                 </li>
