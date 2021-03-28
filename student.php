@@ -75,7 +75,7 @@ require_once 'libs/head.php';
                                 <td><?= ucwords($rs['level']) ?></td>
                                 <td><?= ucwords($rs['gender']) ?></td>
                                 <td><?= $rs['created_at'] ?></td>
-                                <td><a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-primary">View</a></td>
+                                <td><a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-warning">View</a></td>
                             </tr>
                              <?php
                         }
