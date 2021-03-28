@@ -53,4 +53,27 @@ require_once 'libs/head.php';
     </div>
 </div>
 
+<div class="col-lg-6 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-yellow">
+        <div class="inner">
+            <h3>
+                <?php
+                $sql = $db->query("SELECT * FROM ".DB_PREFIX."hostel_type");
+                echo $sql->rowCount();
+                ?>
+            </h3>
+            <p>All Hostel Type</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-person-add"></i>
+        </div>
+        <a href="student.php" class="small-box-footer">
+            More info <i class="fa fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>
+
+
+
 <?php require_once 'libs/foot.php';?>

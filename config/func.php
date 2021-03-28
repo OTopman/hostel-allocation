@@ -103,3 +103,8 @@ function hostel_type($id,$value){
     $rs = $sql->fetch(PDO::FETCH_ASSOC);
     return $rs[$value];
 }
+
+function get_json($data){
+    echo json_encode($data);
+    exit();
+}
