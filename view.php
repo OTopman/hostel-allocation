@@ -76,4 +76,94 @@ require_once 'libs/head.php';
     <!-- /.widget-user -->
 </div>
 
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" data-toggle="tab">Student Details</a></li>
+            <li><a href="#tab_2" data-toggle="tab">Payment History</a></li>
+            <li><a href="#tab_3" data-toggle="tab">Hostel Allocation</a></li>
+            <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_1">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Matric No</td>
+                            <td><?= $data['matric'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Student Name</td>
+                            <td><?= $data['fname'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Level</td>
+                            <td><?= $data['dept'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><?= $data['phone'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Email Address</td>
+                            <td><?= $data['email'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td><?= ucwords($data['gender']) ?></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <!-- /.tab-pane -->
+            <div class="tab-pane" id="tab_2">
+
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="example1">
+                        <thead>
+                        <tr>
+                            <th>SN</th>
+                            <th>Amount Paid</th>
+                            <th>Reference</th>
+                            <th>Term</th>
+                            <th>Class</th>
+                            <th>Payment Status</th>
+                            <th>Payment Type</th>
+                            <th>Academic Session</th>
+                            <th>Created At</th>
+                            <th>Paid At</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th>SN</th>
+                            <th>Amount Paid</th>
+                            <th>Reference</th>
+                            <th>Term</th>
+                            <th>Class</th>
+                            <th>Payment Status</th>
+                            <th>Payment Type</th>
+                            <th>Academic Session</th>
+                            <th>Created At</th>
+                            <th>Paid At</th>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- /.tab-pane -->
+            <div class="tab-pane" id="tab_3">
+
+            </div>
+            <!-- /.tab-pane -->
+        </div>
+        <!-- /.tab-content -->
+    </div>
+    <!-- nav-tabs-custom -->
+</div>
+
 <?php require_once 'libs/foot.php';?>
