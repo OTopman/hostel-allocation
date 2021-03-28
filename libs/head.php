@@ -130,18 +130,12 @@
                 </li>
 
                 <li >
-                    <a href="<?= base_url('staff.php') ?>">
+                    <a href="<?= base_url('allocation.php') ?>">
                         <i class="fa fa-home text-yellow"></i>
                         <span>Hostel Allocation</span>
                     </a>
                 </li>
 
-                <li >
-                    <a href="<?= base_url('add-hall.php') ?>">
-                        <i class="fa fa-home text-yellow"></i>
-                        <span>Add Hall Of Residence</span>
-                    </a>
-                </li>
 
                 <li >
                     <a href="<?= base_url('type.php') ?>">

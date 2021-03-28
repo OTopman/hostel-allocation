@@ -42,7 +42,7 @@ if (isset($_POST['add'])){
         $db->query("INSERT INTO ".DB_PREFIX."students (matric,password,fname,phone,email,dept,level,gender)
         VALUES('$matric','$password','$fname','$phone','$email','$dept','$level','$gender')");
 
-        set_flash("Student has been added successfully","info");
+        set_flash("Student has been added successfully","warning");
 
     }else{
         $msg = ($error_count == 1) ? 'An error occurred' : 'Some error(s) occurred';
