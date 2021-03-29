@@ -82,11 +82,10 @@ public class Login extends AppCompatActivity {
             return;
         }
 
-        startActivity(new Intent(Login.this, Main.class));
 
-        //func.startDialog();
+        func.startDialog();
 
-      /*  StringRequest request = new StringRequest(Request.Method.POST, Core.SITE_URL, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, Core.SITE_URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
@@ -129,13 +128,13 @@ public class Login extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<>();
                 param.put("action", "login");
-                param.put("parent_id", matric);
+                param.put("matric", matric);
                 param.put("password", password);
                 return  param;
             }
         };
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        queue.add(request);*/
+        queue.add(request);
     }
 }

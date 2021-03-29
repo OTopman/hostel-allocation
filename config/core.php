@@ -22,9 +22,9 @@
 
     if (Env == "online") {
         define('DB_HOST', 'localhost');
-        define('DB_TABLE', 'verajnse_career_guidance');
-        define('DB_USER', 'verajnse_career_guidance');
-        define('DB_PASSWORD', 'B(kK!RFo.D%n');
+        define('DB_TABLE', 'verajnse_hostel');
+        define('DB_USER', 'verajnse_hostel');
+        define('DB_PASSWORD', '&b.7LWmCqXYQ');
     }else{
         define('DB_HOST', 'localhost');
         define('DB_TABLE', 'app_fpe_hostel_allocation');

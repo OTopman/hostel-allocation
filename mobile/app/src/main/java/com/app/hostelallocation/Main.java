@@ -46,4 +46,10 @@ public class Main extends AppCompatActivity {
 //            }
 //        });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new Dashboard()).addToBackStack(null).commit();
+    }
 }

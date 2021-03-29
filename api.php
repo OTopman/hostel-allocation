@@ -32,14 +32,19 @@ switch ($action_data['action']){
             $data['msg'] = "Invalid login details, try again";
         }else{
             $data['error'] =1;
-            $data['student_info'] = array(
-                'matric'=>$rs['matric'],
+            $student_info = array(
+                'matric'=>strtoupper($rs['matric']),
                 'fname'=>ucwords($rs['fname']),
                 'level'=>ucwords($rs['level']),
                 'email'=>$rs['email'],
                 'phone'=>$rs['phone'],
-                'dept'=>$rs['dept'],
-                'gender'=>$rs['gender']
+                'dept'=>ucwords($rs['dept']),
+                'gender'=>ucwords($rs['gender'])
+            );
+
+            $data = array(
+                'status'=>$data,
+                'student_info'=>$student_info
             );
         }
 
