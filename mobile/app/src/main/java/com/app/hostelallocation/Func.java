@@ -64,7 +64,7 @@ public class Func {
         if(type.equals("error")) {
             lyt_card.setCardBackgroundColor(activity.getResources().getColor(R.color.red_500));
         }else {
-            lyt_card.setCardBackgroundColor(activity.getResources().getColor(R.color.blue_500));
+            lyt_card.setCardBackgroundColor(activity.getResources().getColor(R.color.green_500));
         }
 
         Toast toast = new Toast(activity);

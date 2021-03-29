@@ -13,7 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.makeramen.roundedimageview.RoundedTransformationBuilder;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Transformation;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -61,8 +63,13 @@ public class Dashboard extends Fragment {
            email.setText(student_info.getString("email"));
            dept.setText(student_info.getString("dept"));
 
-            Picasso.get().load(Core.IMG_URL+student_info.getString("matric")+".jpg").into(image);
+            Transformation transformation = new RoundedTransformationBuilder()
+                    .cornerRadiusDp(50)
+                    .oval(true)
+                    .build();
 
+            final String matric = student_info.getString("matric").toLowerCase();
+            Picasso.get().load(Core.IMG_URL+matric+".jpg").transform(transformation).into(image);
 
         }catch (JSONException e){
             e.printStackTrace();;

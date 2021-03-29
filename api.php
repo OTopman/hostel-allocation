@@ -14,6 +14,8 @@ header('Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, PATCH, DELETE');
 $action_data = @$_POST;
 $data = array();
 
+
+
 switch ($action_data['action']){
     case 'login' :
 
@@ -42,9 +44,19 @@ switch ($action_data['action']){
                 'gender'=>ucwords($rs['gender'])
             );
 
+            $hostel_sql = $db->query("SELECT id,name,type FROM ".DB_PREFIX."hostel_type");
+            while ($rs2 = $hostel_sql->fetch(PDO::FETCH_ASSOC)){
+                $hostel_data[] = array(
+                    'id'=>$rs2['id'],
+                    'name'=>ucwords($rs2['name']),
+                    'type'=>ucwords($rs2['type'])
+                );
+            }
+
             $data = array(
                 'status'=>$data,
-                'student_info'=>$student_info
+                'student_info'=>$student_info,
+                'hostel_data'=>$hostel_data
             );
         }
 
