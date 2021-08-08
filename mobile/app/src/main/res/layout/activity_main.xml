@@ -94,8 +94,8 @@
                     android:layout_height="?attr/actionBarSize"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:tint="@color/colorPrimary"
-                    android:id="@+id/notification"
-                    app:srcCompat="@drawable/ic_baseline_history_24"
+                    android:id="@+id/change_password"
+                    app:srcCompat="@drawable/ic_baseline_perm_identity_24"
                     tools:ignore="VectorDrawableCompat" />
 
             </LinearLayout>

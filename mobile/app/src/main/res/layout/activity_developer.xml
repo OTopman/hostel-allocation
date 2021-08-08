@@ -70,7 +70,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Full Name : Kudaisi Thomas Adewale "
+                android:text="Full Name : Basiru Usman Tolulope "
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="@dimen/spacing_large"
                 android:layout_marginTop="@dimen/spacing_large"
@@ -83,7 +83,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Matric Number : HC20180203658"
+                android:text="Matric Number : HC20180203707"
                 style="@style/TextAppearance.AppCompat.Body2"
                 android:layout_marginBottom="@dimen/spacing_medium"
                 android:fontFamily="sans-serif-condensed"
@@ -132,7 +132,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Dr. Awotidebe M.L"
+                android:text="Dr. Adekiigbe A.A"
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="@dimen/spacing_large"
                 android:textAlignment="center"

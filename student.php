@@ -31,6 +31,7 @@ require_once 'libs/head.php';
                     <thead>
                         <tr>
                             <th>SN</th>
+                            <th>Passport</th>
                             <th>Matric Number</th>
                             <th>Full Name</th>
                             <th>Email Address</th>
@@ -45,6 +46,7 @@ require_once 'libs/head.php';
                     <tfoot>
                     <tr>
                         <th>SN</th>
+                        <th>Passport</th>
                         <th>Matric Number</th>
                         <th>Full Name</th>
                         <th>Email Address</th>
@@ -67,15 +69,16 @@ require_once 'libs/head.php';
                             ?>
                             <tr>
                                 <td><?= $sn++ ?></td>
-                                <td><?= $rs['matric'] ?></td>
+                                <td><img src="https://www.federalpolyede.edu.ng/passport/Reg<?=$rs['matric']?>.jpg" style="width: 50px;height: 50px; border-radius: 5px;"  alt=""></td>
+                                <td><?= strtoupper($rs['matric']) ?></td>
                                 <td><?= ucwords($rs['fname']) ?></td>
                                 <td><?= $rs['email'] ?></td>
                                 <td><?= $rs['phone'] ?></td>
-                                <td><?= $rs['dept'] ?></td>
-                                <td><?= ucwords($rs['level']) ?></td>
+                                <td><?= ucwords($rs['dept']) ?></td>
+                                <td><?= strtoupper($rs['level']) ?></td>
                                 <td><?= ucwords($rs['gender']) ?></td>
                                 <td><?= $rs['created_at'] ?></td>
-                                <td><a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-warning">View</a></td>
+                                <td><a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-danger btn-sm">View</a></td>
                             </tr>
                              <?php
                         }

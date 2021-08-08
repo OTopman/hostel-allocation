@@ -8,6 +8,11 @@
 
 $page_title = "Payment History";
 require_once 'config/core.php';
+if (!is_login()){
+    redirect(base_url('index.php'));
+    return;
+}
+
 require_once 'libs/head.php';
 ?>
 

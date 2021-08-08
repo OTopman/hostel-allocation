@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.makeramen.roundedimageview.RoundedTransformationBuilder;
@@ -62,7 +63,13 @@ public class ListAdapters extends RecyclerView.Adapter<ListAdapters.MyViewHolder
             @Override
             public void onClick(View v) {
 
-                if (is_click.equals("view_student")){
+                if (is_click.equals("make_payment")){
+
+                    Payment payment = new Payment();
+                    payment.setArguments(bundle);
+
+                    ((AppCompatActivity) v.getContext()).getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container, payment).commit();
 
                 }
 

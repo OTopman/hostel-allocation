@@ -8,13 +8,18 @@
 
 $page_title = "Hall Of Residence";
 require_once 'config/core.php';
+if (!is_login()){
+    redirect(base_url('index.php'));
+    return;
+}
+
 if (isset($_POST['add'])){
     $hostel_type = $_POST['type'];
-    $price = $_POST['price'];
+    $price = 10000;//$_POST['price'];
     $room = $_POST['room'];
     $bed = $_POST['bed'];
 
-    if (empty($hostel_type) or empty($price) or empty($room) or empty($bed)){
+    if (empty($hostel_type) or empty($room) or empty($bed)){
         $error[] = "All field(s) are required";
     }
 
@@ -75,7 +80,7 @@ require_once 'libs/head.php';
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="">Hostel Room No</label>
-                                <input type="number" class="form-control" required name="room" placeholder="Room No" id="">
+                                <input type="text" class="form-control" required name="room" placeholder="Room No" id="">
                             </div>
                         </div>
 
@@ -86,12 +91,12 @@ require_once 'libs/head.php';
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="">Room Price</label>
-                                <input type="number" class="form-control" required placeholder="Hostel Price" name="price" id="">
-                            </div>
-                        </div>
+<!--                        <div class="col-sm-12">-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="">Room Price</label>-->
+<!--                                <input type="number" class="form-control" required placeholder="Hostel Price" name="price" id="">-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
 
                     <div class="form-group">
@@ -135,7 +140,6 @@ require_once 'libs/head.php';
                         <th>Hostel Type</th>
                         <th>Room No</th>
                         <th>Hostel Room No Of Beds</th>
-                        <th>Room Price</th>
                         <th>Created At</th>
                     </tr>
                     </thead>
@@ -146,7 +150,6 @@ require_once 'libs/head.php';
                         <th>Hostel Type</th>
                         <th>Room No</th>
                         <th>Hostel Room No Of Beds</th>
-                        <th>Room Price</th>
                         <th>Created At</th>
                     </tr>
                     </tfoot>
@@ -162,7 +165,6 @@ require_once 'libs/head.php';
                                 <td><?= ucwords($rs['type']) ?></td>
                                 <td><?= $rs['room'] ?></td>
                                 <td><?= $rs['bed'] ?></td>
-                                <td><?= amount_format($rs['price']) ?></td>
                                 <td><?= $rs['created_at'] ?></td>
                             </tr>
                             <?php

@@ -9,6 +9,12 @@
 $page_title = "Hall Of Residence Type";
 require_once 'config/core.php';
 
+if (!is_login()){
+    redirect(base_url('index.php'));
+    return;
+}
+
+
 if (isset($_POST['add'])){
     $name = strtolower($_POST['name']);
     $type = strtolower($_POST['type']);

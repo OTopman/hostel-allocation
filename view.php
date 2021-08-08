@@ -7,6 +7,11 @@
  */
 
 require_once 'config/core.php';
+if (!is_login()){
+    redirect(base_url('index.php'));
+    return;
+}
+
 $student_id = $_GET['id'];
 if (!isset($student_id) or empty($student_id)){
     redirect(base_url('404.php'));
@@ -41,22 +46,22 @@ require_once 'libs/head.php';
             <h5 class="widget-user-desc">Level : <?= ucwords($data['level']) ?></h5>
         </div>
         <div class="widget-user-image">
-            <img class="img-circle" src="<?= image_url('icon.jpeg') ?>" style="width: 80px; height: 80px;" alt="User Avatar">
+            <img class="img-circle" src="https://www.federalpolyede.edu.ng/passport/Reg<?=$data['matric']?>.jpg" style="width: 80px; height: 80px;" alt="User Avatar">
         </div>
         <div class="box-footer">
             <div class="row">
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
                         <h5 class="description-header"><?= ucwords($data['gender']) ?></h5>
-                        <span class="description-text">Gender</span>
+                        <span class="description-text" style="text-transform: capitalize">Gender</span>
                     </div>
                     <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
-                        <h5 class="description-header"><?= $data['dept'] ?></h5>
-                        <span class="description-text">Department</span>
+                        <h5 class="description-header"><?= ucwords($data['dept']) ?></h5>
+                        <span class="description-text" style="text-transform: capitalize">Department</span>
                     </div>
                     <!-- /.description-block -->
                 </div>
@@ -64,7 +69,7 @@ require_once 'libs/head.php';
                 <div class="col-sm-4">
                     <div class="description-block">
                         <h5 class="description-header"><?= $data['email'] ?></h5>
-                        <span class="description-text">Email Address</span>
+                        <span class="description-text" style="text-transform: capitalize">Email Address</span>
                     </div>
                     <!-- /.description-block -->
                 </div>
@@ -98,7 +103,11 @@ require_once 'libs/head.php';
                         </tr>
                         <tr>
                             <td>Level</td>
-                            <td><?= $data['dept'] ?></td>
+                            <td><?= strtoupper($data['level']) ?></td>
+                        </tr>
+                        <tr>
+                            <td>Department</td>
+                            <td><?= ucwords($data['dept']) ?></td>
                         </tr>
                         <tr>
                             <td>Phone Number</td>

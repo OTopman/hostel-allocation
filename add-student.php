@@ -8,6 +8,11 @@
 
 $page_title = "Add New Students";
 require_once 'config/core.php';
+if (!is_login()){
+    redirect(base_url('index.php'));
+    return;
+}
+
 if (isset($_POST['add'])){
     $matric = strtolower($_POST['matric']);
     $password = $matric;
