@@ -1,8 +1,12 @@
 package com.app.hostelallocation;
 
+import android.app.DownloadManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,9 +43,9 @@ import co.paystack.android.model.Charge;
 public class Payment extends Fragment {
 
     public Func func;
-    public String hostel_id,response,student_id,email;
+    public String hostel_id,response,student_id,email,matric;
 
-    TextView name,type;
+    TextView name,type,payer_name;
     SharedPreferences sharedPreferences;
 
     EditText card_numbers,card_year,cvv;
@@ -65,6 +69,7 @@ public class Payment extends Fragment {
 
         type = root.findViewById(R.id.st_matric);
         name = root.findViewById(R.id.st_name);
+        payer_name = root.findViewById(R.id.payer_name);
 
         card_numbers =  root.findViewById(R.id.card_numbers);
         card_year = root.findViewById(R.id.card_year);
@@ -86,6 +91,9 @@ public class Payment extends Fragment {
             JSONObject student_info = object.getJSONObject("student_info");
             student_id = student_info.getString("id");
             email = student_info.getString("email");
+            matric = student_info.getString("matric");
+
+            payer_name.setText(student_info.getString("fname"));
 
             for (int i = 0; i < data.length(); i++){
                 JSONObject hostel_data = data.getJSONObject(i);
@@ -122,7 +130,7 @@ public class Payment extends Fragment {
                     func.startDialog();
 
                     charge.setAmount(10000 * 100);
-                    charge.setEmail("oluwagbengamatanmi50@gmail.com");
+                    charge.setEmail(email);
 
                     chargeCard();
 
@@ -149,18 +157,31 @@ public class Payment extends Fragment {
 
                         func.dismissDialog();
 
-                        func.error_toast(response.toString());
+                        //func.error_toast(response.toString());
 
                         try {
                             JSONObject object = new JSONObject(response);
 
-                            if (object.getString("error").equals("1")){
+                            if (object.getString("error").equals("0")){
                                 func.vibrate();
-                                func.success_toast(object.getString("msg"));
+                                func.error_toast(object.getString("msg"));
                                 return;
                             }
 
-                            
+                            func.vibrate();
+
+                            DownloadManager downloadmanager = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
+                            Uri uri = Uri.parse(Core.URI+object.getString("file"));
+
+                            DownloadManager.Request request2 = new DownloadManager.Request(uri);
+                            request2.setTitle(matric);
+                            request2.setDescription("Downloading");
+                            request2.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                            request2.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,"allocation");
+                            downloadmanager.enqueue(request2);
+
+                            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Core.URI+object.getString("file")));
+                            startActivity(browserIntent);
 
                         }catch (JSONException e){
                             e.printStackTrace();
