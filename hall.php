@@ -163,7 +163,7 @@ require_once 'libs/head.php';
                                 <td><?= $sn++ ?></td>
                                 <td><?= ucwords($rs['name']) ?></td>
                                 <td><?= ucwords($rs['type']) ?></td>
-                                <td><?= $rs['room'] ?></td>
+                                <td>Room <?= $rs['room'] ?></td>
                                 <td><?= $rs['bed'] ?></td>
                                 <td><?= $rs['created_at'] ?></td>
                             </tr>

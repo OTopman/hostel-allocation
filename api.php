@@ -36,15 +36,16 @@ try {
     print "Creating an mPDF object failed with" . $e->getMessage();
 }
 
+
 $action_data = @$_POST;
-$data = $hostel_room = $hostel_room = array();
+$data = $hostel_room = $hostel_room  = $student_info = $hostel_data= array();
 
 
 switch ($action_data['action']){
     case 'login' :
 
-        $matric = $action_data['matric'];
-        $password = $action_data['password'];
+        $matric = strtolower($action_data['matric']);
+        $password = strtolower($action_data['password']);
 
         $sql = $db->query("SELECT s.*, d.name as dept FROM ".DB_PREFIX."students s 
         LEFT JOIN ".DB_PREFIX."departments d
@@ -159,15 +160,37 @@ switch ($action_data['action']){
 
             $db->query("INSERT INTO ".DB_PREFIX."payments (student_id,amount,reference,allocation_id)VALUES('$student_id','$amount','$ref','$allocation_id')");
 
-            $allocation_sql = $db->query("SELECT a.*, h.room, ht.name, ht.type, p.amount, p.reference FROM ".DB_PREFIX."allocation a 
+            $allocation_sql = $db->query("SELECT a.*, h.room, ht.name, ht.type, p.amount, p.reference, s.matric, s.fname, d.name as dept FROM ".DB_PREFIX."allocation a 
             INNER JOIN ".DB_PREFIX."hostel h ON a.hostel_id = h.id
             INNER JOIN ".DB_PREFIX."hostel_type ht ON h.hostel_type_id = ht.id
             INNER JOIN ".DB_PREFIX."payments p ON a.id = p.allocation_id
+            INNER JOIN ".DB_PREFIX."students s ON a.student_id = s.id
+            INNER JOIN ".DB_PREFIX."departments d ON s.dept = d.id
             WHERE a.id='$allocation_id'");
 
             $allocation = $allocation_sql->fetch(PDO::FETCH_ASSOC);
 
-            $data['msg'] = $allocation;
+            $file = file_get_contents('receipt.html');
+
+            $matric = str_replace("{{matric}}",strtoupper($allocation['matric']),$file);
+            $fname = str_replace("{{name}}",ucwords($allocation['fname']),$matric);
+            $dept = str_replace("{{department}}",ucwords($allocation['dept']),$fname);
+
+            $amount = str_replace("{{amount}}",amount_format($allocation['amount']),$dept);
+            $reference = str_replace("{{reference}}",$allocation['reference'],$amount);
+
+            $hostel_name = str_replace("{{hostel_name}}",ucwords($allocation['name']),$reference);
+            $hostel_type = str_replace("{{hostel_type}}",ucwords($allocation['type']),$hostel_name);
+            $room = str_replace("{{room}}","Room ".$allocation['room'],$hostel_type);
+            $bed = str_replace("{{bed}}",$allocation['bed'],$room);
+
+            $message = $bed;
+
+            $data['msg'] = "Payment has been successfully, and your payment receipt has been downloaded successful";
+
+            $mpdf->WriteHTML($message);
+            $mpdf->Output('templates/images/'.$allocation['matric'].'.pdf','F');
+            $data['file'] = 'templates/images/'.$allocation['matric'].'.pdf';
 
         }
 

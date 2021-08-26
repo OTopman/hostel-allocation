@@ -26,7 +26,7 @@ public class Developer extends AppCompatActivity {
                 .oval(true)
                 .build();
 
-        final String matric = "HC20180203658";
+        final String matric = "HC20180203707";
 
         Picasso.get().load(Core.IMG_URL+matric+".jpg").transform(transformation).into(profile);
     }

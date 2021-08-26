@@ -32,30 +32,31 @@
 
                     <ImageView
                         android:layout_width="80dp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="@dimen/spacing_xlarge"
                         android:layout_height="80dp"
                         android:src="@drawable/logo" />
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:textSize="@dimen/spacing_large"
-                        android:fontFamily="sans-serif-condensed"
-                        android:text="Hi, welcome"
-                        style="@style/TextAppearance.AppCompat.Body2"
-                        android:textColor="@color/blue_grey_800" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/spacing_medium"-->
+<!--                        android:textSize="@dimen/spacing_large"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:text="Hi, welcome"-->
+<!--                        style="@style/TextAppearance.AppCompat.Body2"-->
+<!--                        android:textColor="@color/blue_grey_800" />-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:text="Sign in to continue"
-                        android:fontFamily="sans-serif-condensed"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textColor="@color/blue_grey_800"
-                        android:layout_marginBottom="@dimen/spacing_large" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/spacing_medium"-->
+<!--                        android:text="Sign in to continue"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+<!--                        android:textColor="@color/blue_grey_800"-->
+<!--                        android:layout_marginBottom="@dimen/spacing_large" />-->
 
                     <View
                         android:layout_width="0dp"
