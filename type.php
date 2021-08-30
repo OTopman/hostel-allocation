@@ -70,7 +70,11 @@ require_once 'libs/head.php';
 
                         <div class="form-group">
                             <label for="">Hostel Type</label>
-                            <input type="text" class="form-control" name="type" required placeholder="Hostel Type (e.g Male hostel)" id="">
+                            <select name="type" required id="" class="form-control">
+                                <option value="" disabled selected>Select</option>
+                                <option value="male hostel">Male Hostel</option>
+                                <option value="female hostel">Female Hostel</option>
+                            </select>
                         </div>
 
                         <div class="form-group">

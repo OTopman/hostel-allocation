@@ -9,6 +9,18 @@
 $page_title = "All Students";
 require_once 'config/core.php';
 require_once 'libs/head.php';
+
+if (isset($_GET['delete'])){
+    $student_id = $_GET['delete'];
+
+    $db->query("DELETE FROM ".DB_PREFIX."students WHERE id='$student_id'");
+    $db->query("DELETE FROM ".DB_PREFIX."payments WHERE student_id='$student_id'");
+    $db->query("DELETE FROM ".DB_PREFIX."allocation WHERE student_id='$student_id'");
+
+    set_flash("Student record has been deleted successfully","warning");
+    //redirect(base_url('student.php'));
+}
+
 ?>
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -25,6 +37,8 @@ require_once 'libs/head.php';
             </div>
         </div>
         <div class="box-body">
+
+            <?php  flash() ?>
 
             <div class="table-responsive">
                 <table class="table table-bordered" id="example1">
@@ -78,7 +92,12 @@ require_once 'libs/head.php';
                                 <td><?= strtoupper($rs['level']) ?></td>
                                 <td><?= ucwords($rs['gender']) ?></td>
                                 <td><?= $rs['created_at'] ?></td>
-                                <td><a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-danger btn-sm">View</a></td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="view.php?id=<?= $rs['id'] ?>" class="btn btn-danger btn-sm">View</a>
+                                        <a href="student.php?delete=<?= $rs['id'] ?>" onclick="return confirm('Are you sure, you want to delete it')" class="btn btn-danger btn-sm">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                              <?php
                         }

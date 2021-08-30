@@ -70,7 +70,9 @@ switch ($action_data['action']){
                 'gender'=>ucwords($rs['gender'])
             );
 
-            $hostel_sql = $db->query("SELECT id,name,type FROM ".DB_PREFIX."hostel_type");
+            $gender = strtolower($rs['gender'])." hostel";
+
+            $hostel_sql = $db->query("SELECT id,name,type FROM ".DB_PREFIX."hostel_type WHERE type ='$gender'");
             while ($rs2 = $hostel_sql->fetch(PDO::FETCH_ASSOC)){
                 $hostel_data[] = array(
                     'id'=>$rs2['id'],
