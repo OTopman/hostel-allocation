@@ -139,9 +139,14 @@ switch ($action_data['action']){
 
         $rs = $sql->fetch(PDO::FETCH_ASSOC);
 
+        $sql_allocation = $db->query("SELECT * FROM ".DB_PREFIX."allocation WHERE student_id='$student_id'");
+
         if ($sql->rowCount() == 0){
             $data['error'] = 0;
             $data['msg'] = "No available rooms in ".ucwords($hostel_name)." (".ucwords($hostel_type).")";
+        }elseif ($sql_allocation->rowCount() >= 1){
+            $data['error'] = 0;
+            $data['msg'] = "You have already allocate for hostel";
         }else{
             $data['error'] =1;
             $hostel_id = $rs['id'];
@@ -193,7 +198,6 @@ switch ($action_data['action']){
             $mpdf->WriteHTML($message);
             $mpdf->Output('templates/images/'.$allocation['matric'].'.pdf','F');
             $data['file'] = 'templates/images/'.$allocation['matric'].'.pdf';
-
         }
 
         get_json($data);

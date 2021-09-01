@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4d61f0f-12b7-4cf3-879b-641424636f28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hostel-allocation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hostel-allocation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type.php" beforeDir="false" afterPath="$PROJECT_DIR$/type.php" afterDir="false" />
-    </list>
+    <list default="true" id="b4d61f0f-12b7-4cf3-879b-641424636f28" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+            <state relative-caret-position="360">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -245,18 +237,18 @@
       <workItem from="1628400467919" duration="15789000" />
       <workItem from="1629978866163" duration="689000" />
       <workItem from="1630226678994" duration="20000" />
-      <workItem from="1630347706118" duration="2167000" />
+      <workItem from="1630347706118" duration="2399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49114000" />
+    <option name="totallyTimeSpent" value="49346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4006462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4006462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -512,8 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        <state relative-caret-position="360">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
